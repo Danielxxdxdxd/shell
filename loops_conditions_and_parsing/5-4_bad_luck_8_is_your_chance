@@ -15,4 +15,3 @@ while [ $i -lt 10 ]
             echo "Best School"
         fi
     done
-

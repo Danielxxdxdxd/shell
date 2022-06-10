@@ -1,20 +1,19 @@
 #!/usr/bin/env bash
-# displays Holberton School 10 times.
+# This script displays Holberton School 10 times
+i="0"
 
-COUNTER = 1
-while [$COUNTER -lt 101]
-do
-    if [$((COUNTER%15)) = 0]
+for i in {1..100}; do
+
+    if ((i % 3 == 0)) && ((i % 5 == 0));
     then
-        echo "FizzBuzz"
-    elif [$((COUNTER%3)) = 0]
+	    echo "FizzBuzz"
+    elif ((i % 3 == 0));
     then
-        echo "Fizz"
-    elif [$((COUNTER%5)) = 0]
+	    echo "Fizz"
+    elif ((i % 5 == 0));
     then
-        echo "Buzz"
+	    echo "Buzz"
     else
-        echo "$COUNTER"
+	    echo "$i"
     fi
-    let COUNTER += 1
 done

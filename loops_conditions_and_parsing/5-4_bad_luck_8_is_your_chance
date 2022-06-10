@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# print Holberton School 10 times using while loop
+# print Best School 10 times using while loop
 
 i="0"
 while [ $i -lt 10 ]
@@ -12,6 +12,6 @@ while [ $i -lt 10 ]
         then
             echo "good luck"
         else
-            echo "Holberton School"
+            echo "Best School"
         fi
     done

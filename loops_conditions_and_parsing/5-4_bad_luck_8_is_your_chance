@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
-# displays Best School 10 times.
+# print Holberton School 10 times using while loop
 
-COUNTER = 1
-while [$COUNTER -lt 11]
-do
-    if [$COUNTER = 4]
-    then
-        echo "bad luck"
-    elif [$COUNTER = 8]
-    then
-        echo "good luck"
-    else
-        echo "Best School"
-    fi
-    let COUNTER += 1
-done
+i="0"
+while [ $i -lt 10 ]
+    do
+        i=$((i + 1))
+        if [ $i -eq 4 ]
+        then
+            echo "bad luck"
+        elif [ $i -eq 8 ]
+        then
+            echo "good luck"
+        else
+            echo "Holberton School"
+        fi
+    done
